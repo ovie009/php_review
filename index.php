@@ -8,24 +8,34 @@
 </head>
 <body>
     <?php
+        // string
+        $text = "coding is fun";
+        echo '<em>'.$text.'</em>';
+        echo ' is of datatype string<br>';
+        
+        // integer
+        $num = 78;
+        echo '<em>'.$num.'</em>';
+        echo ' is of datatype integer<br>';
+        
+        // float
+        $dec = 3.142;
+        echo '<em>'.$dec.'</em>';
+        echo ' is of datatype float<br>';
+        
+        // Boolean
+        $oldAge = true;
+        $youngAge = false;
+        echo '<em>'.$oldAge.'</em>';
+        echo ' is a Boolean datatype<br>';
 
-        // predefined functions
-        $text = "Lorem ipsum dolor sit amet.";
-        echo 'text: '.$text;
-        echo '<br>';
-        echo 'string length: '.strlen($text); // calculate string length
-        echo '<br>';
-        echo 'string word count: '.str_word_count($text); // calculate string length
-        echo '<br>';
-
-        // user defined function
-        // basic function to multiply any number by 1000
-        function multiplyByOneThousand($num) {
-            return $num * 1000;
-        }
-
-        echo multiplyByOneThousand(35);
-
+        // array
+        $students = array("John Doe", "Jane Doe", "Jack Doe");
+        echo '<strong>Arrays</strong><br><em>';
+        print_r($students);
+        echo '</em> Parent Array<br>';
+        echo '<em>'.$students[1].'</em>';
+        echo ' is an array element';
     ?>
 </body>
 </html>
