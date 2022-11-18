@@ -10,31 +10,31 @@
     <?php
         // string
         $text = "coding is fun";
-        echo '<em>'.$text.'</em>';
+        echo '<strong><em>'.$text.'</em></strong>';
         echo ' is of datatype string<br>';
         
         // integer
         $num = 78;
-        echo '<em>'.$num.'</em>';
+        echo '<strong><em>'.$num.'</em></strong>';
         echo ' is of datatype integer<br>';
         
         // float
         $dec = 3.142;
-        echo '<em>'.$dec.'</em>';
+        echo '<strong><em>'.$dec.'</em></strong>';
         echo ' is of datatype float<br>';
         
         // Boolean
         $oldAge = true;
         $youngAge = false;
-        echo '<em>'.$oldAge.'</em>';
+        echo '<strong><em>'.$oldAge.'</em></strong>';
         echo ' is a Boolean datatype<br>';
 
         // array
         $students = array("John Doe", "Jane Doe", "Jack Doe");
-        echo '<strong>Arrays</strong><br><em>';
+        echo '<strong><h3>Arrays</h3></strong><strong><em>';
         print_r($students);
-        echo '</em> Parent Array<br>';
-        echo '<em>'.$students[1].'</em>';
+        echo '</em></strong> Parent Array<br>';
+        echo '<strong><em>'.$students[1].'</em></strong>';
         echo ' is an array element';
     ?>
 </body>
