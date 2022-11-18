@@ -7,26 +7,24 @@
     <title>PHP Review</title>
 </head>
 <body>
-    <!-- form with no action attribute -->
-    <!-- which means the data would be submitted to the same page -->
-    <form method="GET">
-        <input type="text" name="user" id="" placeholder="your name">
-        <button type="submit">SUBMIT</button>
-    </form>
     <?php
-        // variables
 
-        // string
-        $name = "John Doe";
-        echo $name;
+        // predefined functions
+        $text = "Lorem ipsum dolor sit amet.";
+        echo 'text: '.$text;
+        echo '<br>';
+        echo 'string length: '.strlen($text); // calculate string length
+        echo '<br>';
+        echo 'string word count: '.str_word_count($text); // calculate string length
+        echo '<br>';
 
-        // concantenation
-        echo '<br>'; // new line
-        echo $name.' is a handsome fellow';
-        
-        echo '<br>'; // new line
-        $user =  $_GET["user"]; // get user variable submitted from input using GET method
-        echo $user.' is a logged in'; // concantenate variable with text
+        // user defined function
+        // basic function to multiply any number by 1000
+        function multiplyByOneThousand($num) {
+            return $num * 1000;
+        }
+
+        echo multiplyByOneThousand(35);
 
     ?>
 </body>
