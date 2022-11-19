@@ -39,6 +39,31 @@
         echo "<br><strong>Power</strong><br>";
         echo "10<sup>5</sup>=";
         echo 10**5;
+        
+        // increment operator
+        $x = 10;
+        echo "<br><strong>Increment</strong><br>";
+        echo 'if x = 10, x++ = ';
+        $x++;
+        echo $x;
+        echo "<br><strong>Increment by a value</strong><br>";
+        $y = 27;
+        echo 'if y = '.$y.', y += 9 is equal to ';
+        $y+=9;
+        echo $y;
+
+        // Decrement operator
+        $x = 10;
+        echo "<br><strong>Decrement</strong><br>";
+        echo 'if x = 10, x-- = ';
+        $x--;
+        echo $x;
+        echo "<br><strong>Decrement by a value</strong><br>";
+        $y = 27;
+        echo 'if y = '.$y.', y -= 9 is equal to ';
+        $y-=9;
+        echo $y;
+
     ?>
 </body>
 </html>
