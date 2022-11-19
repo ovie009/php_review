@@ -8,39 +8,48 @@
 </head>
 <body>
     <?php
-        // Logical operators
-        $x = 10;
-        $y = 20;
 
-        // or
-        if ($x == $y or 1 == 1) {
-            echo 'True';
-            echo '<br>';
-        }
+        // conditional statements
+        $age = 35;
+        echo 'John Doe is '.$age.'years old, <strong><em>John is ';
+
+        if ($age < 13) {
+            # code...
+            echo 'a child';
         
-        // and
-        if ($x == $y and 1 == 1) {
-            echo 'True';
-            echo '<br>';
+        } else if ($age < 20) {
+            # code...
+            echo 'a teenager';
+            
+        } else if ($age < 30) {
+            # code...
+            echo 'in his 20\'s';
+            
+        } else if ($age < 40) {
+            # code...
+            echo 'in his 30\'s';
+            
+        } else if ($age < 50) {
+            # code...
+            echo 'in his 40\'s';
+            
+        } else if ($age < 60) {
+            # code...
+            echo 'in his 50\'s';
+            
+        } else if ($age < 70) {
+            # code...
+            echo 'in his 60\'s';
+            
+        } else {
+            # code...
+            echo 'very old';
         }
 
-        // or logical operator
-        if ($x == $y || 1 == 1) {
-            echo 'True';
-            echo '<br>';
-        }
+        echo '</em></strong>'
+        
 
-        // and logical operator
-        if ($x != $y && 1 != 2) {
-            echo 'True';
-            echo '<br>';
-        }
-
-        // xor (xclusive or, only runs if any of the conditions are true, not both)
-        if ($x != $y xor 1 == 2) {
-            echo 'True';
-            echo '<br>';
-        }
+        
     ?>
 </body>
 </html>
