@@ -9,29 +9,56 @@
 <body>
     <?php
         
-        // Assignment Operators
+        // comparison Operators
         $x = 100;
+        $y = 80;
 
-        echo 'x = 100';
-        echo '<br> ';
-        echo '<br>increase x by 10';
-        $x += 10;
-        echo '<br>x current value '.$x;
+        echo 'x = '.$x;
+        echo '<br>';
+        echo 'y = '.$y;
+        echo '<br>';
         
-        echo '<br> ';
-        echo '<br>reducce x by 30';
-        $x -= 30;
-        echo '<br>x current value '.$x;
+        if ($x === $y) {
+            # code...
+            echo 'x is equal to y';
+        } else {
+            # code...
+            echo 'x is not equal to y';
+        }
+
+        echo '<br>';
+        if ($x > $y) {
+            # code...
+            echo 'x is greater than y';
+        } else {
+            # code...
+            echo 'x is not greater than y';
+        }
         
-        echo '<br> ';
-        echo '<br>divided x by 5';
-        $x /= 5;
-        echo '<br>x current value '.$x;
         
-        echo '<br> ';
-        echo '<br>multiply x by 10';
-        $x *= 10;
-        echo '<br>x current value '.$x;
+        echo '<br>';
+        $logic = true;
+        echo "'logic' variable is equal to ".$logic; 
+        echo '<br>';
+        if($logic == 1){
+            echo 'Boolean true is equal to 1 in value';
+        }
+        
+        echo '<br>';
+        if($logic === 1){
+            echo 'Boolean true is equal in both value and datatype to 1';
+        } else {
+            echo 'Boolean true is not equal in either/both value or datatype to 1';
+
+        }
+        
+        echo '<br>';
+        if($logic !== 0){
+            echo 'Boolean true is not equal to 0';
+        }
+
+        // == checks for equality in value, checks for equality in value and datatype
+
 
     ?>
 </body>
