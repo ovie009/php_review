@@ -9,41 +9,46 @@
 <body>
 
     <?php 
-        // hover date function to view possible parameters
+        // LOOPS
 
-        $seconds = date('s');
-        echo 'seconds: ';
-        echo $seconds;
-
-        $minutes = date('i');
-        echo '<br>minutes: ';
-        echo $minutes;
+        // while loop
+        $x = 1;
+        echo '<strong>While loop</strong><br>';
+        while ($x <= 5) {
+            # code...
+            echo 'loop stops when x is gereater than 5<br>';
+            echo 'current x value is '.$x.'<br>';
+            $x++;
+        }
         
-        $hour = date('H');
-        echo '<br>hour: ';
-        echo $hour;
+        // do while loop
+        // do while loop runs once before checking if condition is true
+        $y = 1;
+        echo '<br><strong>Do While loop</strong><br>';
+        do {
+            # code...
+            echo 'loop stops when y is gereater than 3<br>';
+            echo 'current y value is '.$y.'<br>';
+            $y++;
+        } while ($y <= 3);
         
-        $day = date('l');
-        echo '<br>day: ';
-        echo $day;
-
-        $week = date('W');
-        echo '<br>week: ';
-        echo $week;
-
-        $month = date('F');
-        echo '<br>month: ';
-        echo $month;
-
-        $year = date('Y');
-        echo '<br>year: ';
-        echo $year;
-
-        $todayDate = date('d-m-Y');
-        echo '<br>todayDate: ';
-        echo $todayDate;
-
-
+        // for loop
+        echo '<br><strong>for loop</strong><br>';
+        for ($i=0; $i <= 12; $i+=3) { 
+            # code...
+            echo 'loop stops when i is gereater than 12<br>';
+            echo 'current i value is '.$i.'<br>';
+        }
+        
+        // for each loop
+        echo '<br><strong>foreach loop</strong><br>';
+        $students = array('John', 'Mark', 'Peter', 'Paul');
+        print_r($students);
+        echo '<br>';
+        foreach ($students as $student) {
+            # code...
+            echo $student.' is a disciple of Christ<br>';
+        }
     ?>
 
 </body>
