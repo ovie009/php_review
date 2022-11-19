@@ -10,42 +10,51 @@
     <?php
 
         // conditional statements
-        $age = 35;
+        $age = 10;
         echo 'John Doe is '.$age.'years old, <strong><em>John is ';
 
-        if ($age < 13) {
-            # code...
-            echo 'a child';
-        
-        } else if ($age < 20) {
-            # code...
-            echo 'a teenager';
+        switch ($age) {
+            case $age < 13:
+                # code...
+                echo 'a child';
+                break;
+                
+                case $age < 20:
+                # code...
+                echo 'a teenager';
+                break;
+                
+                case $age < 30:
+                # code...
+                echo 'in his 20\'s';
+                break;
             
-        } else if ($age < 30) {
-            # code...
-            echo 'in his 20\'s';
+            case $age < 40:
+                # code...
+                echo 'in his 30\'s';
+                break;
             
-        } else if ($age < 40) {
-            # code...
-            echo 'in his 30\'s';
+            case $age < 50:
+                # code...
+                echo 'in his 40\'s';
+                break;
             
-        } else if ($age < 50) {
-            # code...
-            echo 'in his 40\'s';
+            case $age < 60:
+                # code...
+                echo 'in his 50\'s';
+                break;
             
-        } else if ($age < 60) {
-            # code...
-            echo 'in his 50\'s';
+            case $age < 70:
+                # code...
+                echo 'in his 60\'s';
+                break;
             
-        } else if ($age < 70) {
-            # code...
-            echo 'in his 60\'s';
-            
-        } else {
-            # code...
-            echo 'very old';
+            default:
+                # code...
+                echo 'very old';
+                break;
         }
-
+            
         echo '</em></strong>'
         
 
