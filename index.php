@@ -8,61 +8,43 @@
 </head>
 <body>
 
-    <form action="index.php" method="get">
-        <input type="number" name="num1" placeholder="number 1" required>
-        <input type="number" name="num2" placeholder="number 2" required>
-        <br>
-        <select name="operation">
-            <option value="add">add</option>
-            <option value="sub">substract</option>
-            <option value="mul">multiply</option>
-            <option value="div">divide</option>
-        </select>
-        <button type="submit" name="submit">calculate</button>
-    </form>
+    <?php 
+        // hover date function to view possible parameters
 
-    <p> Answer: 
-        <strong>
-            <?php
-                $x = 0;
-                if (isset($_GET['submit'])) {
-                    # code...
-                    echo $_GET['num1'];
-                    switch ($_GET['operation']) {
+        $seconds = date('s');
+        echo 'seconds: ';
+        echo $seconds;
 
-                        case 'sub':
-                            # code...
-                            // substract numbers
-                            $x = $_GET['num1'] - $_GET['num2'];
-                            echo '-';
-                            break;
-                            
-                        case 'mul':
-                            # code...
-                            // multiply numbers
-                            $x = $_GET['num1'] * $_GET['num2'];
-                            echo '*';
-                            break;
-                            
-                        case 'div':
-                            # code...
-                            // divide numbers
-                            $x = $_GET['num1'] / $_GET['num2'];
-                            echo '/';
-                            break;
-                            
-                        default:
-                            # code...
-                            // default action, add numbers
-                            $x = $_GET['num1'] + $_GET['num2'];
-                            echo '+';
-                            break;
-                    }
+        $minutes = date('i');
+        echo '<br>minutes: ';
+        echo $minutes;
+        
+        $hour = date('H');
+        echo '<br>hour: ';
+        echo $hour;
+        
+        $day = date('l');
+        echo '<br>day: ';
+        echo $day;
 
-                    echo $_GET['num2'].' = '.$x;
-                }
-            ?>
-        </strong>
-    </p>
+        $week = date('W');
+        echo '<br>week: ';
+        echo $week;
+
+        $month = date('F');
+        echo '<br>month: ';
+        echo $month;
+
+        $year = date('Y');
+        echo '<br>year: ';
+        echo $year;
+
+        $todayDate = date('d-m-Y');
+        echo '<br>todayDate: ';
+        echo $todayDate;
+
+
+    ?>
+
 </body>
 </html>
