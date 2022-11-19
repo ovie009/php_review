@@ -8,34 +8,37 @@
 </head>
 <body>
     <?php
-        // string
-        $text = "coding is fun";
-        echo '<strong><em>'.$text.'</em></strong>';
-        echo ' is of datatype string<br>';
-        
-        // integer
-        $num = 78;
-        echo '<strong><em>'.$num.'</em></strong>';
-        echo ' is of datatype integer<br>';
-        
-        // float
-        $dec = 3.142;
-        echo '<strong><em>'.$dec.'</em></strong>';
-        echo ' is of datatype float<br>';
-        
-        // Boolean
-        $oldAge = true;
-        $youngAge = false;
-        echo '<strong><em>'.$oldAge.'</em></strong>';
-        echo ' is a Boolean datatype<br>';
+        // operators
 
-        // array
-        $students = array("John Doe", "Jane Doe", "Jack Doe");
-        echo '<strong><h3>Arrays</h3></strong><strong><em>';
-        print_r($students);
-        echo '</em></strong> Parent Array<br>';
-        echo '<strong><em>'.$students[1].'</em></strong>';
-        echo ' is an array element';
+        // Addition
+        echo "<strong>Addition</strong><br>";
+        echo "10+5=";
+        echo 10+5;
+        
+        // substraction
+        echo "<br><strong>Substraction</strong><br>";
+        echo "10-5=";
+        echo 10-5;
+        
+        // division
+        echo "<br><strong>Division</strong><br>";
+        echo "10/5=";
+        echo 10/5;
+        
+        // multiplication
+        echo "<br><strong>Multiplication</strong><br>";
+        echo "10*5=";
+        echo 10*5;
+
+        // modulus
+        echo "<br><strong>Modulus</strong><br>";
+        echo "10%5=";
+        echo 10%5;
+        
+        // power
+        echo "<br><strong>Power</strong><br>";
+        echo "10<sup>5</sup>=";
+        echo 10**5;
     ?>
 </body>
 </html>
