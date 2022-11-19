@@ -8,37 +8,31 @@
 </head>
 <body>
     <?php
-        // operators
+        
+        // Assignment Operators
+        $x = 100;
 
-        // Addition
-        echo "<strong>Addition</strong><br>";
-        echo "10+5=";
-        echo 10+5;
+        echo 'x = 100';
+        echo '<br> ';
+        echo '<br>increase x by 10';
+        $x += 10;
+        echo '<br>x current value '.$x;
         
-        // substraction
-        echo "<br><strong>Substraction</strong><br>";
-        echo "10-5=";
-        echo 10-5;
+        echo '<br> ';
+        echo '<br>reducce x by 30';
+        $x -= 30;
+        echo '<br>x current value '.$x;
         
-        // division
-        echo "<br><strong>Division</strong><br>";
-        echo "10/5=";
-        echo 10/5;
+        echo '<br> ';
+        echo '<br>divided x by 5';
+        $x /= 5;
+        echo '<br>x current value '.$x;
         
-        // multiplication
-        echo "<br><strong>Multiplication</strong><br>";
-        echo "10*5=";
-        echo 10*5;
+        echo '<br> ';
+        echo '<br>multiply x by 10';
+        $x *= 10;
+        echo '<br>x current value '.$x;
 
-        // modulus
-        echo "<br><strong>Modulus</strong><br>";
-        echo "10%5=";
-        echo 10%5;
-        
-        // power
-        echo "<br><strong>Power</strong><br>";
-        echo "10<sup>5</sup>=";
-        echo 10**5;
     ?>
 </body>
 </html>
