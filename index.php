@@ -8,8 +8,8 @@
 </head>
 <body>
     <!-- POST SUPERGLOBALS -->
-    <!-- post sends data securely and the information can only be passed with the form -->
-    <form action="./form_handler.php" method="post">
+    <!-- get sends data by attaching the parameters to the link, its an unsecured method of data transfer -->
+    <form action="./form_handler.php" method="get">
         <input type="text" name="user" id="user" placeholder="what is your name" required>
         <button type="submit">SUBMIT</button>
     </form>

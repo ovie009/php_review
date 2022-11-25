@@ -25,5 +25,5 @@
             # code...
             break;
     }
-    echo 'Good '.$greeting.' '.$_POST['user'].' hope you\'re having a nice day';
+    echo 'Good '.$greeting.' '.$_GET['user'].' hope you\'re having a nice day';
 ?>
