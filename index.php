@@ -9,47 +9,45 @@
 <body>
 
     <?php 
-        // LOOPS
+        
+        // ARRAYS
+        $names = array('John', 'Jane', 'James', 'Jackson');
 
-        // while loop
-        $x = 1;
-        echo '<strong>While loop</strong><br>';
-        while ($x <= 5) {
-            # code...
-            echo 'loop stops when x is gereater than 5<br>';
-            echo 'current x value is '.$x.'<br>';
-            $x++;
-        }
-        
-        // do while loop
-        // do while loop runs once before checking if condition is true
-        $y = 1;
-        echo '<br><strong>Do While loop</strong><br>';
-        do {
-            # code...
-            echo 'loop stops when y is gereater than 3<br>';
-            echo 'current y value is '.$y.'<br>';
-            $y++;
-        } while ($y <= 3);
-        
-        // for loop
-        echo '<br><strong>for loop</strong><br>';
-        for ($i=0; $i <= 12; $i+=3) { 
-            # code...
-            echo 'loop stops when i is gereater than 12<br>';
-            echo 'current i value is '.$i.'<br>';
-        }
-        
-        // for each loop
-        echo '<br><strong>foreach loop</strong><br>';
-        $students = array('John', 'Mark', 'Peter', 'Paul');
-        print_r($students);
+        // print entire array
+        echo 'FULL ARRAY ==> ';
+        print_r($names);
         echo '<br>';
-        foreach ($students as $student) {
-            # code...
-            echo $student.' is a disciple of Christ<br>';
-        }
-    ?>
+        
+        // first element of array
+        echo 'first element in array => ';
+        echo $names[0];
+        echo '<br>';
+        
+        // Third element in array
+        echo 'Third element in array => ';
+        echo $names[2];
+        echo '<br>';
+
+        // reassign a new value to an element in the array
+        $names[1] = 'Peter';
+        // reprint array
+        echo 'FULL ARRAY ==> ';
+        print_r($names);
+        echo '<br>';
+        
+        // assigning a new value to an element in the array does
+        $names[100] = 'Matthew'; 
+        // you can give the 100th element of the array a value 
+        // even if the length of the array is just four elements
+        // the value of elements between the 4th and 100th element would be empty
+        // reprint array
+        echo 'FULL ARRAY ==> ';
+        print_r($names);
+        echo '<br>';
+        // not neccessarily have to happen serially
+        
+        
+        ?>
 
 </body>
 </html>
