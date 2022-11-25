@@ -8,18 +8,22 @@
 </head>
 <body>
     <?php 
-        // COOKIES
-        // cokkies save information of the user on the browser
-        setcookie('user', 'Prometheus', time() + 86400);
-        // setcookie('cookie name', 'cookie value', 'time for the cookie to expire')
+        // SESSION
+        // sessions save information of the server
+        // these can be used to store more sensitive information
+        // like username and password
+        $_SESSION['username'] = 'johnDoe123';
+        $_SESSION['accountType'] = 'admin';
 
-        // NOTES
-        // setting the cookie time to negative would automatically destroy the cookie
-        // the time function 'time()' give the current time
-        // 86400 is the time addes in seconds to the current time
-        // 86400 is equall to 1 day
+        if ($_SESSION['accountType'] === 'admin') {
+            echo 'This user is an Admin';
+            echo '<br>username: <strong><em>'.$_SESSION['username'].'</em></strong>';
+            # code...
+        }
 
-        echo $_COOKIE['user'];
+        // session ends when a user closes the browser
+        // sessions remains running even if browser tabs are changed
+
 
     ?>
 </body>
