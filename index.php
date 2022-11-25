@@ -1,5 +1,3 @@
-<!-- include functions -->
-<?php include './functions/seventyFivePercent.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,32 +7,11 @@
     <title>PHP Review</title>
 </head>
 <body>
-    <?php
-
-        // SUPERGLOBALS
-        
-        // superglobals are varables already created by php
-
-        // Examples
-        /*
-            $GLOBALS
-            $_POST
-            $_GET
-            $_COOKIE
-            $_SESSION
-            $_SERVER
-        */
-
-        function weight($mass){
-            $GLOBALS['accelerationDueToGravity'] = 9.81;
-            return $mass * $GLOBALS['accelerationDueToGravity'];
-        }
-
-        // if John has a mass of 80kg
-        $john = 80; 
-        echo weight($john).'N';
-        echo '<br>where acceleration due to gravity is '.$GLOBALS['accelerationDueToGravity'].'m/s';
-
-    ?>
+    <!-- POST SUPERGLOBALS -->
+    <!-- post sends data securely and the information can only be passed with the form -->
+    <form action="./form_handler.php" method="post">
+        <input type="text" name="user" id="user" placeholder="what is your name" required>
+        <button type="submit">SUBMIT</button>
+    </form>
 </body>
 </html>
