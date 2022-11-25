@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +10,11 @@
     <title>PHP Review</title>
 </head>
 <body>
+    <h1>
+        HOME 
+    </h1>
     <?php 
+        include './nav-links.php';
         // SESSION
         // sessions save information of the server
         // these can be used to store more sensitive information
@@ -23,6 +30,8 @@
 
         // session ends when a user closes the browser
         // sessions remains running even if browser tabs are changed
+
+        // for session to be accessed from multiple pages, a session needs to be running on a browser
 
 
     ?>
