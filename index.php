@@ -11,10 +11,29 @@
 <body>
     <?php
 
-        // includes
-        $revenue = 89000;
-        $profit = seventyFivePercent($revenue);
-        echo 'Profit made from a revenue of '.$revenue.' is '.$profit;
+        // SCOPE
+
+        // variables in the code is a global scope
+        // while varibales in a function is a local scope
+
+        $x = 15;
+        // global varaible
+        // can be used anywhere in the document
+
+
+        function test(){
+            $y = 27;
+            // local variable
+            // can be used only within the function
+        }
+
+        // runs fine
+        echo $x;
+
+        echo '<br>';
+
+        // gives an error message
+        echo $y;
 
     ?>
 </body>
