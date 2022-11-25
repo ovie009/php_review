@@ -11,29 +11,29 @@
 <body>
     <?php
 
-        // SCOPE
+        // SUPERGLOBALS
+        
+        // superglobals are varables already created by php
 
-        // variables in the code is a global scope
-        // while varibales in a function is a local scope
+        // Examples
+        /*
+            $GLOBALS
+            $_POST
+            $_GET
+            $_COOKIE
+            $_SESSION
+            $_SERVER
+        */
 
-        $x = 15;
-        // global varaible
-        // can be used anywhere in the document
-
-
-        function test(){
-            $y = 27;
-            // local variable
-            // can be used only within the function
+        function weight($mass){
+            $GLOBALS['accelerationDueToGravity'] = 9.81;
+            return $mass * $GLOBALS['accelerationDueToGravity'];
         }
 
-        // runs fine
-        echo $x;
-
-        echo '<br>';
-
-        // gives an error message
-        echo $y;
+        // if John has a mass of 80kg
+        $john = 80; 
+        echo weight($john).'N';
+        echo '<br>where acceleration due to gravity is '.$GLOBALS['accelerationDueToGravity'].'m/s';
 
     ?>
 </body>
