@@ -1,3 +1,5 @@
+<!-- include functions -->
+<?php include './functions/seventyFivePercent.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,22 +11,10 @@
 <body>
     <?php
 
-        // predefined functions
-        $text = "Lorem ipsum dolor sit amet.";
-        echo 'text: '.$text;
-        echo '<br>';
-        echo 'string length: '.strlen($text); // calculate string length
-        echo '<br>';
-        echo 'string word count: '.str_word_count($text); // calculate string length
-        echo '<br>';
-
-        // user defined function
-        // basic function to multiply any number by 1000
-        function multiplyByOneThousand($num) {
-            return $num * 1000;
-        }
-
-        echo multiplyByOneThousand(35);
+        // includes
+        $revenue = 89000;
+        $profit = seventyFivePercent($revenue);
+        echo 'Profit made from a revenue of '.$revenue.' is '.$profit;
 
     ?>
 </body>
