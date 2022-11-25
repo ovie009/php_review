@@ -7,11 +7,20 @@
     <title>PHP Review</title>
 </head>
 <body>
-    <!-- POST SUPERGLOBALS -->
-    <!-- get sends data by attaching the parameters to the link, its an unsecured method of data transfer -->
-    <form action="./form_handler.php" method="get">
-        <input type="text" name="user" id="user" placeholder="what is your name" required>
-        <button type="submit">SUBMIT</button>
-    </form>
+    <?php 
+        // COOKIES
+        // cokkies save information of the user on the browser
+        setcookie('user', 'Prometheus', time() + 86400);
+        // setcookie('cookie name', 'cookie value', 'time for the cookie to expire')
+
+        // NOTES
+        // setting the cookie time to negative would automatically destroy the cookie
+        // the time function 'time()' give the current time
+        // 86400 is the time addes in seconds to the current time
+        // 86400 is equall to 1 day
+
+        echo $_COOKIE['user'];
+
+    ?>
 </body>
 </html>
